@@ -1,0 +1,7 @@
+services:
+  ollama:
+    image: walc-dia2-ollama:paquete
+  postgres:
+    image: walc-dia2-postgres:paquete
+  app:
+    image: walc-dia2-app:paquete

@@ -1,0 +1,102 @@
+[
+  {
+    "archivo": "orientacion-v1.pdf",
+    "documento": "horario-orientacion",
+    "titulo": "Horario de orientación · versión 1",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-09-01",
+    "vigente_hasta": "2026-09-30",
+    "tipo": "politica"
+  },
+  {
+    "archivo": "orientacion-v2.pdf",
+    "documento": "horario-orientacion",
+    "titulo": "Horario de orientación · versión 2",
+    "version": 2,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "politica"
+  },
+  {
+    "archivo": "biblioteca.pdf",
+    "documento": "biblioteca",
+    "titulo": "Biblioteca universitaria",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  },
+  {
+    "archivo": "tutorias.pdf",
+    "documento": "tutorias",
+    "titulo": "Tutorías académicas",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  },
+  {
+    "archivo": "constancias.pdf",
+    "documento": "constancias",
+    "titulo": "Constancias académicas",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  },
+  {
+    "archivo": "plataforma.pdf",
+    "documento": "plataforma",
+    "titulo": "Acceso a la plataforma",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  },
+  {
+    "archivo": "inscripciones.pdf",
+    "documento": "inscripciones",
+    "titulo": "Guía de solicitud de inscripción",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  },
+  {
+    "archivo": "calendario-academico.pdf",
+    "documento": "calendario-academico",
+    "titulo": "Calendario y canales de atención",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  },
+  {
+    "archivo": "preguntas-estudiantes.pdf",
+    "documento": "preguntas-estudiantes",
+    "titulo": "Preguntas frecuentes de estudiantes",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "faq"
+  },
+  {
+    "archivo": "incidencias-inscripcion.pdf",
+    "documento": "incidencias-inscripcion",
+    "titulo": "Incidencias y recomendaciones de inscripción",
+    "version": 1,
+    "sede": "norte",
+    "vigente_desde": "2026-10-01",
+    "vigente_hasta": "sin fecha de fin",
+    "tipo": "procedimiento"
+  }
+]

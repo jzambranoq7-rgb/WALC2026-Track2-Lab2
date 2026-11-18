@@ -1,0 +1,70 @@
+annotated-types==0.8.0
+    # via
+    #   pydantic
+anyio==4.15.1
+    # via
+    #   httpx
+    #   pinecone
+certifi==2026.10.23
+    # via
+    #   httpcore
+    #   httpx
+h11==0.16.0
+    # via
+    #   httpcore
+h2==4.4.1
+    # via
+    #   httpx
+hpack==4.2.0
+    # via
+    #   h2
+httpcore==1.0.9
+    # via
+    #   httpx
+httpx==0.28.1
+    # via
+    #   ollama
+    #   pinecone
+hyperframe==6.1.0
+    # via
+    #   h2
+idna==3.20
+    # via
+    #   anyio
+    #   httpx
+msgspec==0.22.0
+    # via
+    #   pinecone
+ollama==0.6.1
+    # via
+    #   -r requirements.txt
+orjson==3.13.0
+    # via
+    #   pinecone
+pinecone==10.2.0
+    # via
+    #   -r requirements.txt
+psycopg==3.2.12
+    # via -r requirements.txt
+psycopg-binary==3.2.12
+    # via psycopg
+pydantic==2.12.3
+    # via
+    #   -r requirements.txt
+    #   ollama
+pydantic-core==2.41.4
+    # via
+    #   pydantic
+pypdf==6.21.4
+    # via
+    #   -r requirements.txt
+typing-extensions==4.16.0
+    # via
+    #   anyio
+    #   psycopg
+    #   pydantic
+    #   pydantic-core
+    #   typing-inspection
+typing-inspection==0.4.4
+    # via
+    #   pydantic

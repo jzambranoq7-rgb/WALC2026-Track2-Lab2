@@ -1,0 +1,56 @@
+name: walc-lab-dia-2
+services:
+  ollama:
+    image: ollama/ollama@sha256:292ee7945dfc3d5840a181f3ab86fedb1e66703e02c8af98b50f4da56b7e278c
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+  postgres:
+    image: postgres:16@sha256:1beaa3084eee2676f20a9cd9928f0bf2c5bf674f8e49f81017912183d377c61c
+    environment:
+      POSTGRES_DB: walc
+      POSTGRES_USER: walc
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Configura POSTGRES_PASSWORD en .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U walc -d walc"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+  app:
+    build: .
+    env_file: .env
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      RESULTS_DIR: /app/resultados
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGDATABASE: walc
+      PGUSER: walc
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+    depends_on:
+      ollama:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src:ro
+      - ./tests:/app/tests:ro
+      - ./conocimiento:/app/conocimiento:ro
+      - ./resultados:/app/resultados
+    stdin_open: true
+    tty: true
+    # Sirve los PDF originales y mantiene app activo para docker compose exec.
+    command: python -m http.server 8000 --directory /app/conocimiento
+    ports:
+      - "127.0.0.1:8002:8000"
+volumes:
+  ollama_data:
+  postgres_data:
